@@ -1,5 +1,7 @@
 import React from "react";
 import { Box, Button, Center, ChakraProvider, Flex, Heading, Stack, Text } from "@chakra-ui/react";
+import { Link } from 'react-router-dom';
+import Wallets from "./Wallets";
 
 function Transac() {
     const transactions = [
@@ -55,9 +57,13 @@ function Transac() {
           </Box>
           <Stack direction="row" spacing={2}>
             <Button colorScheme="purple.800">Onchain Transaction</Button>
+            <Link to="/Wallets">
             <Button colorScheme="purple.800">Your Wallet Transaction</Button>
+            </Link>
             <Button colorScheme="purple.800">Subscription Management</Button>
-            <Button color="purple.800">Subscribe</Button>
+            <Link to="/">
+              <Button color="purple.800">Subscribe</Button>
+            </Link>
           </Stack>
         </Flex>
         

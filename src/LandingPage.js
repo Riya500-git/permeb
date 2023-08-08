@@ -13,8 +13,12 @@ function LandingPage() {
               <Text color="white" fontWeight="bold">permeb</Text>
             </Box>
             <Stack direction="row" spacing={2}>
+            <Link to="/transac">
               <Button colorScheme="purple.800">Onchain Transaction</Button>
-              <Button colorScheme="purple.800">Connected Wallets</Button>
+            </Link>
+            <Link to="/wallets">
+              <Button colorScheme="purple.800">Your Wallet Transaction</Button>
+            </Link>
               <Button color="purple.800">Subscribe</Button>
             </Stack>
           </Flex>
@@ -35,7 +39,8 @@ function LandingPage() {
                 <Heading>Explore</Heading>
                 <Flex direction="row" mt={10}>
                   <Link
-                    href="#"
+                    href="./Transac"
+                    to="/transac"
                     _hover={{ textDecoration: "none" }}
                     flex={1}
                     p={4}

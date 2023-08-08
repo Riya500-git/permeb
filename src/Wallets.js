@@ -1,13 +1,15 @@
 import React from "react";
 import { Box, Button, Center, ChakraProvider, Flex, Heading, Stack, Text, Tab, Tabs, TabList } from "@chakra-ui/react";
+import { Link } from 'react-router-dom';
 
-function Wallet() {
+
+function Wallets() {
     const transactions = [
         {
           id: 1,
           walletAddress: "DYw8j...CNSKK",
-          currency: "Ethereum",
-          amount: "1.1186 ETH",
+          currency: "Bitcoin",
+          amount: "1.1186 BTC",
           transactionStatus: "Sent",
           emailNotificationDate: "11:53 PM 03.08.2023",
         },
@@ -22,8 +24,8 @@ function Wallet() {
           {
             id: 3,
             walletAddress: "7KYlFp...LpitbK",
-            currency: "Ethereum",
-            amount: "3.732 ETH",
+            currency: "Bitcoin",
+            amount: "3.732 BTC",
             transactionStatus: "Received",
             emailNotificationDate: "02:20 PM 03.08.2023",
           },
@@ -41,8 +43,10 @@ function Wallet() {
             <Button colorScheme="purple.800">Onchain Transaction</Button>
             <Button colorScheme="purple.800">Your Wallet Transaction</Button>
             <Button colorScheme="purple.800">Subscription Management</Button>
-            <Button color="purple.800">Subscribe</Button>
-          </Stack>
+            <Link to="/">
+              <Button color="purple.800">Subscribe</Button>
+            </Link>          
+            </Stack>
         </Flex>
 
         <Center minH="80vh">
@@ -119,4 +123,4 @@ function Wallet() {
   )
 };
 
-export default Wallet;
+export default Wallets;

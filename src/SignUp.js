@@ -11,6 +11,8 @@ import {
   ChakraProvider,
 } from '@chakra-ui/react';
 import image from './undraw_Security_on_re_e491.png'
+import { Link } from 'react-router-dom';
+import LandingPage from './LandingPage';
 
 const SignUp = () => {
     const [selectedFile, setSelectedFile] = useState(null);
@@ -47,7 +49,9 @@ const SignUp = () => {
             </Box>
             <Divider />
             <Text textAlign="center">Or</Text>
+            <Link to="/landingpage">
             <Button colorScheme="blue" width="900px">Get a Wallet</Button>
+            </Link>
           </Box>
 
           <Box flex={1} p={4} bg="white">

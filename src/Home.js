@@ -1,9 +1,12 @@
 import React from "react";
-import { Box, Button, Center, ChakraProvider, Container, Flex, Heading, Image, Link, Stack, Text, Input, Wrap, WrapItem } from "@chakra-ui/react";
+import { Box, Button, Center, ChakraProvider, Container, Flex, Heading, Image, Stack, Text, Input, Wrap, WrapItem } from "@chakra-ui/react";
 import image1 from './codioful-formerly-gradienta-UF_wwDxI6uk-unsplash.jpg';
 import image2 from './codioful-formerly-gradienta-rKv4HduvzIE-unsplash.jpg';
 import image3 from './undraw_People_search_re_5rre.png';
 import image4 from './undraw_Security_on_re_e491.png';
+import SignUp from "./SignUp";
+import { Link } from 'react-router-dom';
+
 
 function Home() {
   return (
@@ -39,9 +42,11 @@ function Home() {
                 mr="2"
                 width="300px"
             />
+            <Link to="/signup">
             <Button colorScheme="blue">
                 Subscribe
             </Button>
+            </Link >
             </Flex>
             </Center>
             <Button color="purple.800" mt={4}>Built on Arweave</Button>
